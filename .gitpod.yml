@@ -12,10 +12,14 @@ tasks:
   openIn: right
 - command: echo "openIn main"
   openIn: main
-- command: echo "Tab 1, top left"
-- command: echo "Tab 1, top right"
+- command: echo "Tab 1, first"
+- command: echo "Tab 1, third"
   openMode: split-right
-- command: echo "Tab 1, bottom left"
+- command: echo "Tab 1, second"
+  openMode: split-left
+- command: echo "Tab 2, first"
+  openMode: tab-after
+- command: echo "Tab 2, second"
   openMode: split-right
 
 vscode:
