@@ -1,0 +1,15 @@
+
+image:
+  file: .gitpod.Dockerfile
+ports:
+- port: 8080
+tasks:
+- init: npm install
+  command: echo "This is the command task."
+- command: echo "Second terminal, split-bottom"
+  openMode: split-bottom
+
+vscode:
+  extensions:
+    - lightyen.tailwindcss-intellisense-twin
+    - scala-lang.scala
