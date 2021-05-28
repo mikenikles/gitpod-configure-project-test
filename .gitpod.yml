@@ -4,10 +4,19 @@ image:
 ports:
 - port: 8080
 tasks:
-- init: npm install
-  command: echo "This is the command task."
-- command: echo "Second terminal, split-bottom"
-  openMode: split-bottom
+- command: echo "openIn left"
+  openIn: left
+- command: echo "openIn bottom"
+  openIn: bottom
+- command: echo "openIn right"
+  openIn: right
+- command: echo "openIn main"
+  openIn: main
+- command: echo "Tab 1, top left"
+- command: echo "Tab 1, top right"
+  openMode: split-right
+- command: echo "Tab 1, bottom left"
+  openMode: split-right
 
 vscode:
   extensions:
